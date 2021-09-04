@@ -1,0 +1,29 @@
+@media (min-width:759px){
+    #as_app{
+        section{
+            padding-left: 70px;
+            padding-bottom: 10px;
+        }
+        .home{
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-around;
+            &_img{
+                width: 40vw;
+            }
+        }
+
+        .resume_about{
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            grid-template-areas: 
+            "a b b b"
+            "c c d d"; 
+        }
+
+        .projects #my_projects{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+

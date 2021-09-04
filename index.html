@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://aziz-sobirov.github.io/AS-library/css/as.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="as_app">
+        <!-- bar -->
+        <ul id="as_app-bar"></ul>
+
+        <!-- Home -->
+        <section id="home" class="home">
+            <div class="home_text">
+                <h3>Hi. I'm</h3>
+                <h2>Aziz Sobirov</h2>
+                <h3>I'm Web Developer</h3>
+            </div>
+            <div class="home_img">
+                <img src="./img/user.svg" alt="Aziz Sobirov">
+            </div>
+        </section>
+
+
+        <!-- resume -->
+        <section id="resume" class="resume">
+            <div class="resume_about">
+                <div class="resume_about-img">
+                    <img src="./img/selfie.jpg" alt="Aziz Sobirov">
+                </div>
+                <div class="resume_about-text">
+                    <h3>About Me</h3>
+                    <p>My name is Aziz. My surname is Sobirov. I am 16. I was born in 2005 in Khazarasp. I live in small town of Khorezm in the Uzbekistan Republic. My Address is Khorezm, Khazarasp district Sanoat village, Taraqqiyot Street 3. My phone number is +998 330772021. <br>I love coding because coding is great. I have 1 year experience in coding.  To date I have created several useful web pages, you can see these in projects section.</p> 
+                </div>
+                <div class="resume_about-skills">
+                    <h3>My skills</h3>
+                    <h4>Front-End</h4>
+                    <p>HTML (Pug / Jade), CSS (SASS/SCSS/STYLUS), JavaScript (Vue.JS)</p>
+                    <h4>Back-End</h4>
+                    <p>MongoDB, ExpressJS, VueJS, Node.JS</p>
+                    <h4>Libraries</h4>
+                    <p>Font Awesome, AOS, AS, Alertia, Swiper.JS, Anime.JS</p>
+                    <h4>Additonal</h4>
+                    <p>Git , Github, API, AJAX, Telegram API, Sketchwere(for android web app)</p>
+                    <h4>UI / UX design</h4>
+                    <p>Figma</p>
+                </div>
+                <div class="resume_about-social">
+                    <h3>My social networks</h3>
+                    <div class="as_grid">
+                        <span>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#">Aziz.WebDev</a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#">Aziz.WebDev</a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#">Portfolio_AzizSobirov</a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#">AzizSobirov</a>
+                        </span>
+                    </div>
+                    <h3>For Contact</h3>
+                    <div class="as_grid">
+                        <span>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#">Aziz_Sobirov</a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="far fa-envelope"></i></a>
+                            <a href="#">azizsobirovdev@gmail.com</a>
+                        </span>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+
+        <!-- projects -->
+        <section id="projects" class="projects">
+            <div class="projects_nav">
+                <h2>Projects</h2>
+                <input type="search" id="as_input" placeholder="Search Projects" oninput="searchProject(this.value.toUpperCase())">
+            </div>
+            <div id="my_projects"></div>
+            <img src="./img/my-project.svg" style="height: 50vw;" alt="">
+        </section>
+
+
+        <!-- services -->
+        <section id="services">
+            services
+        </section>
+
+
+        <!-- contact -->
+        <section id="contact">
+            contact
+        </section>
+
+    </div>
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="https://aziz-sobirov.github.io/AS-library/js/as.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+#as_app{
+    background: url(../img/bg.png) left/cover;
+    background-repeat: repeat;
+    #as_app-bar{
+        z-index: 3;
+    }
+    ul{
+        background: transparent;
+        backdrop-filter: blur(5px);
+        a{
+            color: #000;
+            span::before{
+                background: #38b8d0;
+            }
+            &:hover{
+                background: #eaebed;
+                span{
+                    background: #eaebed;
+                }  
+            }
+        }
+    }
+
+    section{
+        max-height: 100vh;
+        overflow-y: scroll;
+        padding: 10px;
+        padding-bottom: 60px;
+    }
+
+    // home
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        // display: none;
+        &_text{
+            h3{
+                font-size: 1.5em;
+            }
+            h2{
+                font-size: 2em;
+            }
+        }
+        &_img{
+            width: 100%;
+        }
+    }
+
+    // resume
+    .resume{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        // display: none;
+        &_about{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto; 
+            grid-template-areas: 
+            "a""b""c""d";
+            grid-gap: 20px;
+            &-img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                grid-area: a;
+                img{
+                    height: 250px;
+                    width: 250px;
+                    border-radius: 50%;
+                }
+            }
+            &-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                grid-area: b;
+                p{
+                    margin-top: 10px;
+                    color: #00000090;
+                }
+            }
+            &-skills{
+                grid-area: c;
+                h4{
+                    margin-top: 10px;
+                }
+                p{
+                    color: #00000090;
+                }
+            }
+            &-social{
+                grid-area: d;
+                .as_grid{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+                span{
+                    display: flex;
+                    a{
+                        font-size: 1.5em;
+                        color: #38b8d0;
+                        &:nth-child(2){
+                            margin-left: 10px;
+                            font-size: 18px;
+                            color: #00000090;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    // projects
+    .projects{
+        flex-direction: column;
+        justify-content: flex-start;
+        &_nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #my_projects{
+            width: 100%;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr;
+            .project{
+                margin-top: 10px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                background: #eaebed80;
+                backdrop-filter: blur(10px);
+                img{
+                    width: 100%;
+                }
+                h3{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@import 'media';

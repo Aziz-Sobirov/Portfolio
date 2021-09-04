@@ -1,0 +1,281 @@
+#as_app {
+  background: url(../img/bg.png) left/cover;
+  background-repeat: repeat;
+}
+
+#as_app #as_app-bar {
+  z-index: 3;
+}
+
+#as_app ul {
+  background: transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+#as_app ul a {
+  color: #000;
+}
+
+#as_app ul a span::before {
+  background: #38b8d0;
+}
+
+#as_app ul a:hover {
+  background: #eaebed;
+}
+
+#as_app ul a:hover span {
+  background: #eaebed;
+}
+
+#as_app section {
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
+#as_app .home {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#as_app .home_text h3 {
+  font-size: 1.5em;
+}
+
+#as_app .home_text h2 {
+  font-size: 2em;
+}
+
+#as_app .home_img {
+  width: 100%;
+}
+
+#as_app .resume {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#as_app .resume_about {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "a" "b" "c" "d";
+  grid-gap: 20px;
+}
+
+#as_app .resume_about-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+#as_app .resume_about-img img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+#as_app .resume_about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: b;
+}
+
+#as_app .resume_about-text p {
+  margin-top: 10px;
+  color: #00000090;
+}
+
+#as_app .resume_about-skills {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+#as_app .resume_about-skills h4 {
+  margin-top: 10px;
+}
+
+#as_app .resume_about-skills p {
+  color: #00000090;
+}
+
+#as_app .resume_about-social {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: d;
+}
+
+#as_app .resume_about-social .as_grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#as_app .resume_about-social span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#as_app .resume_about-social span a {
+  font-size: 1.5em;
+  color: #38b8d0;
+}
+
+#as_app .resume_about-social span a:nth-child(2) {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #00000090;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#as_app .projects {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#as_app .projects_nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#as_app .projects #my_projects {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#as_app .projects #my_projects .project {
+  margin-top: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #eaebed80;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+#as_app .projects #my_projects .project img {
+  width: 100%;
+}
+
+#as_app .projects #my_projects .project h3 {
+  margin-top: 10px;
+}
+
+@media (min-width: 759px) {
+  #as_app section {
+    padding-left: 70px;
+    padding-bottom: 10px;
+  }
+  #as_app .home {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #as_app .home_img {
+    width: 40vw;
+  }
+  #as_app .resume_about {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "a b b b" "c c d d";
+  }
+  #as_app .projects #my_projects {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
