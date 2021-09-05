@@ -129,6 +129,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            input{
+                max-width: 50vw;
+            }
         }
         #my_projects{
             width: 100%;
@@ -148,6 +151,40 @@
                 }
                 h3{
                     margin-top: 10px;
+                }
+                a{
+                    position: relative;
+                    margin-top: 15px;
+                    padding: 5px 15px;
+                    box-shadow: 0 0 0 2px #000;
+                    overflow: hidden;
+                    transition:0.5s;
+                    h4{
+                        position: relative;
+                    }
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        background: #38b8d0;
+                        opacity: 0;
+                        transition:0.5s;
+                    }
+                    &:hover{
+                        box-shadow: 0 0 0 2px #38b8d0;
+                        h4{
+                            color: #fff;
+                        }
+                        &::before{
+                            transform:translate(-50%,-50%) scale(10);
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }

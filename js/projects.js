@@ -5,6 +5,7 @@ let projects = [
         title:"Plants Shop Landing Page. Adaptive",
         img:"plants",
         href:"http://plants-shop.netlify.app/"
+        // href:"#"
     },{
         name:'Expedia Landing Page',
         title:"Expedia landing page for desktop",
@@ -32,7 +33,7 @@ for(let i=0;i<projects.length;i++){
     <img src="./img/projects/${projects[i].img}.png" alt="${projects[i].name}">
     <h3>${projects[i].name}</h3>
     <p>${projects[i].title}</p>
-    <a href="${projects[i].href}">Visit Site</a>
+    <a href="${projects[i].href}"><h4>Visit Site</h4></a>
     </div>                
     `
 }
