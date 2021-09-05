@@ -27,6 +27,13 @@
 
         .contact{
             flex-direction: row;
+            justify-content: space-around;
+            img{
+                height: 60vh;
+            }
+            form{
+                max-width: 30vw;
+            }
         }
     }
 }

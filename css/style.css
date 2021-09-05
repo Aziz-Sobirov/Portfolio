@@ -302,6 +302,7 @@
 }
 
 #as_app .projects_nav {
+  padding: 10px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +320,7 @@
 }
 
 #as_app .projects #my_projects {
+  padding: 10px;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -416,8 +418,7 @@
 
 #as_app .contact form {
   padding: 0 5vw;
-  width: 100%;
-  max-width: 350px;
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,6 +547,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #as_app .contact img {
+    height: 60vh;
+  }
+  #as_app .contact form {
+    max-width: 30vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

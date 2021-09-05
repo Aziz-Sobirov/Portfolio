@@ -168,6 +168,7 @@
         flex-direction: column;
         justify-content: flex-start;
         &_nav{
+            padding: 10px;
             width: 100%;
             display: flex;
             align-items: center;
@@ -177,6 +178,7 @@
             }
         }
         #my_projects{
+            padding: 10px;
             width: 100%;
             display: grid;
             grid-gap: 10px;
@@ -248,8 +250,7 @@
         }
         form{
             padding: 0 5vw;
-            width: 100%;
-            max-width: 350px;
+            width:90vw;
             display: flex;
             flex-direction: column;
             fieldset{
