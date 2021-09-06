@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://aziz-sobirov.github.io/AS-library/css/as.css">
+    <link rel="stylesheet" href="./AS/as.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/abhiprojectz/alertia/dist/alertia.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -104,21 +105,21 @@
             <form action="">
                 <fieldset>
                     <legend>Your Name</legend>
-                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Name" id="contact_name">
                 </fieldset>
                 <fieldset>
                     <legend>Your Email</legend>
-                    <input type="email" placeholder="Your Email">
+                    <input type="email" placeholder="Your Email" id="contact_email">
                 </fieldset>
                 <fieldset>
                     <legend>Your Phone Number</legend>
-                    <input type="number" placeholder="Your Number">
+                    <input type="number" placeholder="Your Number" id="contact_number">
                 </fieldset>
                 <fieldset>
-                    <legend>Describe your Feeadback</legend>
-                    <textarea placeholder="Write here"></textarea>
+                    <legend>Your Message</legend>
+                    <textarea placeholder="Your Message" id="contact_message"></textarea>
                 </fieldset>
-                <button><h4>Send</h4></button>
+                <button type="reset" onclick="sendRequest()"><h4>Send</h4></button>
             </form>
         </section>
 
@@ -126,6 +127,6 @@
     
     <script src="./js/index.js"></script>
     <script src="./js/projects.js"></script>
-    <script src="https://aziz-sobirov.github.io/AS-library/js/as.js"></script>
+    <script src="./AS/as.js"></script>
 </body>
 </html>

@@ -256,11 +256,12 @@
             fieldset{
                 padding: 0 5px;
                 border-radius:10px;
-                border:2px solid #00000090;
+                border:2px solid #00000080;
                 outline: none;
                 legend{
                     margin-left: 10px;
-                    color: #00000090;
+                    font-weight: 700;
+                    color: #00000080;
                 }
                 input,textarea{
                     width: 100%;
@@ -270,6 +271,16 @@
                     font-size: 16px;
                     font-weight: 500;
                     background: transparent;
+                    &::placeholder{
+                        transition: 2s;
+                    }
+                    &:focus::placeholder{
+                        transform: translateX(-100%);
+                    }
+                }
+                textarea{
+                    resize: none;
+                    height: 15vh;
                 }
                 &:not(:first-child){
                     margin-top: 10px;

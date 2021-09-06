@@ -431,13 +431,14 @@
 #as_app .contact form fieldset {
   padding: 0 5px;
   border-radius: 10px;
-  border: 2px solid #00000090;
+  border: 2px solid #00000080;
   outline: none;
 }
 
 #as_app .contact form fieldset legend {
   margin-left: 10px;
-  color: #00000090;
+  font-weight: 700;
+  color: #00000080;
 }
 
 #as_app .contact form fieldset input, #as_app .contact form fieldset textarea {
@@ -448,6 +449,49 @@
   font-size: 16px;
   font-weight: 500;
   background: transparent;
+}
+
+#as_app .contact form fieldset input::-webkit-input-placeholder, #as_app .contact form fieldset textarea::-webkit-input-placeholder {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#as_app .contact form fieldset input:-ms-input-placeholder, #as_app .contact form fieldset textarea:-ms-input-placeholder {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#as_app .contact form fieldset input::-ms-input-placeholder, #as_app .contact form fieldset textarea::-ms-input-placeholder {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#as_app .contact form fieldset input::placeholder, #as_app .contact form fieldset textarea::placeholder {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#as_app .contact form fieldset input:focus::-webkit-input-placeholder, #as_app .contact form fieldset textarea:focus::-webkit-input-placeholder {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#as_app .contact form fieldset input:focus:-ms-input-placeholder, #as_app .contact form fieldset textarea:focus:-ms-input-placeholder {
+  transform: translateX(-100%);
+}
+
+#as_app .contact form fieldset input:focus::-ms-input-placeholder, #as_app .contact form fieldset textarea:focus::-ms-input-placeholder {
+  transform: translateX(-100%);
+}
+
+#as_app .contact form fieldset input:focus::placeholder, #as_app .contact form fieldset textarea:focus::placeholder {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#as_app .contact form fieldset textarea {
+  resize: none;
+  height: 15vh;
 }
 
 #as_app .contact form fieldset:not(:first-child) {
@@ -551,7 +595,8 @@
         justify-content: space-around;
   }
   #as_app .contact img {
-    height: 60vh;
+    height: auto;
+    width: 40vw;
   }
   #as_app .contact form {
     max-width: 30vw;
