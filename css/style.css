@@ -4,29 +4,9 @@
 }
 
 #as_app #as_app-bar {
-  z-index: 3;
-}
-
-#as_app ul {
   background: transparent;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-}
-
-#as_app ul a {
-  color: #000;
-}
-
-#as_app ul a span::before {
-  background: #38b8d0;
-}
-
-#as_app ul a:hover {
-  background: #eaebed;
-}
-
-#as_app ul a:hover span {
-  background: #eaebed;
 }
 
 #as_app section {
@@ -76,7 +56,7 @@
 }
 
 #as_app .resume_about {
-  padding: 20px;
+  padding: 20px 5vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;

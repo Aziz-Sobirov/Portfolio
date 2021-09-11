@@ -2,23 +2,8 @@
     background: url(../img/bg.png) left/cover;
     background-repeat: repeat;
     #as_app-bar{
-        z-index: 3;
-    }
-    ul{
         background: transparent;
         backdrop-filter: blur(5px);
-        a{
-            color: #000;
-            span::before{
-                background: #38b8d0;
-            }
-            &:hover{
-                background: #eaebed;
-                span{
-                    background: #eaebed;
-                }  
-            }
-        }
     }
 
     section{
@@ -53,7 +38,7 @@
         justify-content: flex-start;
         align-items: center;
         &_about{
-            padding: 20px;
+            padding: 20px 5vw;
             display: grid;
             grid-template-columns: 1fr; 
             grid-template-rows: auto; 
