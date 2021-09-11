@@ -1,11 +1,15 @@
 
 let projects = [
     {
+        name:'Music Player',
+        title:"You may listen any musics in our web app with hight resolution.",
+        img:"music-player",
+        href:"http://omusic.netlify.app/"
+    },{
         name:'Plants Shop',
         title:"Plants Shop Landing Page. Adaptive",
         img:"plants",
         href:"http://plants-shop.netlify.app/"
-        // href:"#"
     },{
         name:'Expedia Landing Page',
         title:"Expedia landing page for desktop",
@@ -21,6 +25,11 @@ let projects = [
         title:"Covid21 Statics Daily. Adaptive",
         img:"covid21",
         href:"https://covid21.netlify.app/"
+    },{
+        name:'Krill Lotin Translator',
+        title:"Through this website you can convert lotin letters to krill leters or krill to lotin.",
+        img:"krill-lotin",
+        href:"https://krill-lotin.netlify.app/"
     }
 ];
 
