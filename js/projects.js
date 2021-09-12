@@ -1,35 +1,53 @@
 
 let projects = [
     {
+        name:'Luxury Hotels',
+        title:"Luxury Hotels Landing Page",
+        img:"agency",
+        href:"https://luxury-hotels.netlify.app/",
+        info:'HTML, CSS(SCSS), for Desktop'
+    },{
         name:'Music Player',
         title:"You may listen any musics in our web app with hight resolution.",
         img:"music-player",
-        href:"http://omusic.netlify.app/"
+        href:"http://omusic.netlify.app/",
+        info:'HTML, CSS(SCSS), JavaScript, Adaptive'
     },{
         name:'Plants Shop',
-        title:"Plants Shop Landing Page. Adaptive",
+        title:"Plants Shop Landing Page.",
         img:"plants",
-        href:"http://plants-shop.netlify.app/"
+        href:"http://plants-shop.netlify.app/",
+        info:'HTML, CSS(SCSS), JavaScript, Adaptive'
     },{
-        name:'Expedia Landing Page',
-        title:"Expedia landing page for desktop",
+        name:'Expedia',
+        title:"Expedia — лендинг туристического агентства.",
         img:"expedia",
-        href:"https://expedia-landing-page.netlify.app/"
+        href:"https://expedia-landing-page.netlify.app/",
+        info:'HTML, CSS(SCSS), for Desktop'
     },{
-        name:'Agency Landing Page',
-        title:"Agency landing page for desktop",
+        name:'Agency',
+        title:"Agency — лендинг диджитал агентства",
         img:"agency",
-        href:"https://agency-landing-page.netlify.app/"
+        href:"https://agency-landing-page.netlify.app/",
+        info:'HTML, CSS(SCSS), for Desktop'
+    },{
+        name:'Portfolio',
+        title:"My old Portfolio",
+        img:"portfolio",
+        href:"https://azizdev.netlify.app/",
+        info:'HTML, CSS(SCSS), JavaScript, Telegram Bot API, Adaptive'
     },{
         name:'Covid21 Statics',
-        title:"Covid21 Statics Daily. Adaptive",
+        title:"Through this website you can view the daily statistics of covid infection in the world.",
         img:"covid21",
-        href:"https://covid21.netlify.app/"
+        href:"https://covid21.netlify.app/",
+        info:'HTML, CSS(SCSS), JavaScript, API, Adaptive'
     },{
         name:'Krill Lotin Translator',
         title:"Through this website you can convert lotin letters to krill leters or krill to lotin.",
         img:"krill-lotin",
-        href:"https://krill-lotin.netlify.app/"
+        href:"https://krill-lotin.netlify.app/",
+        info:'HTML, CSS, JavaScript, Adaptive'
     }
 ];
 
@@ -42,7 +60,10 @@ for(let i=0;i<projects.length;i++){
     <img src="./img/projects/${projects[i].img}.png" alt="${projects[i].name}">
     <h3>${projects[i].name}</h3>
     <p>${projects[i].title}</p>
-    <a href="${projects[i].href}"><h4>Visit Site</h4></a>
+    <h4>${projects[i].info}</h4>
+    <div id="as_btn">
+        <a href="${projects[i].href}">Visit Site</a>
+    </div>
     </div>                
     `
 }

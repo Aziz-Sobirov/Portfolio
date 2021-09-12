@@ -22,6 +22,54 @@ let as_app_bar = [
     }
 ];
 
+let error404_home = "https://sobirov.netlify.app"
+let error404_contact = "https://sobirov.netlify.app/#contact"
+
+
+// resume
+let services = [
+    {
+        name:"Web Development",
+        icon:"far fa-user",
+        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+    },{
+        name:"Web Development",
+        icon:"far fa-user",
+        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+    },{
+        name:"Web Development",
+        icon:"far fa-user",
+        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+    },    {
+        name:"Web Development",
+        icon:"far fa-user",
+        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+    },{
+        name:"Web Development",
+        icon:"far fa-user",
+        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+    },{
+        name:"Web Development",
+        icon:"far fa-user",
+        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+    }
+]
+
+for(let i=0;i<services.length;i++){
+    document.querySelector(".services #as_grid").innerHTML+=`
+<div class="card">
+    <h2><i class="${services[i].icon}"></i> ${services[i].name}</h2>
+    <p>${services[i].title}</p>
+    <div id="as_btn" onclick="orderService(${i})">
+        <a href="#">Order</a>
+    </div>
+</div>`
+}
+
+function orderService(i){
+    document.getElementById("as_error404").style.display="flex"
+}
+
 
 // contact
 async function sendRequest(){

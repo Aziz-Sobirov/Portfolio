@@ -25,6 +25,13 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
 
+        .services{
+            justify-content: center;
+            #as_grid{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
         .contact{
             flex-direction: row;
             justify-content: space-around;

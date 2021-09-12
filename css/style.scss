@@ -5,6 +5,22 @@
         background: transparent;
         backdrop-filter: blur(5px);
     }
+    #as_error{
+        z-index: 4;
+    }
+
+    #as_btn{
+        box-shadow: 0 0 0 2px #38b8d0;
+        transition: 0.5s;
+        a{color: #38b8d0;}
+        &::before{
+            background: #38b8d0;
+        }
+        &:hover{
+            box-shadow:none;
+            a{color: #fff;}
+        }
+    }
 
     section{
         max-height: 100vh;
@@ -176,54 +192,59 @@
                 align-items:flex-start;
                 background: #eaebed80;
                 backdrop-filter: blur(10px);
+                border-radius: 10px;
                 img{
                     width: 100%;
                 }
                 h3{
                     margin-top: 10px;
                 }
-                a{
-                    position: relative;
-                    margin-top: 15px;
-                    padding: 5px 15px;
-                    box-shadow: 0 0 0 2px #000;
-                    overflow: hidden;
-                    transition:0.5s;
-                    h4{
-                        position: relative;
-                    }
-                    &::before{
-                        position: absolute;
-                        content: '';
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
-                        height: 20px;
-                        width: 20px;
-                        border-radius: 50%;
-                        background: #38b8d0;
-                        opacity: 0;
-                        transition:0.5s;
-                    }
-                    &:hover{
-                        box-shadow: 0 0 0 2px #38b8d0;
-                        h4{
-                            color: #fff;
-                        }
-                        &::before{
-                            transform:translate(-50%,-50%) scale(10);
-                            opacity: 1;
-                        }
-                    }
+                h4{
+                    margin-bottom: 10px;
+                    color: #38b8d0;
+                }
+                p{
+                    margin: 10px 0;
+                    color: #00000090;
                 }
             }
         }
     }
 
+    // .resume,.projects,.home{
+        // display: none;
+    // }
+
     // services
     .services{
+        justify-content: flex-start;
+        flex-direction: column;
+        #as_grid{
+            margin: 10px 0;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+            .card{
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                border-radius: 10px;
+                background: linear-gradient(45deg, #eaebedcb, #ffffff80);
+                backdrop-filter: blur(10px);
+                transition: 0.5s;
+                p{
+                    margin: 10px 0;
+                    color: #00000090;
+                }
+                &:hover{
+                    box-shadow: 0 0 2px 2px #eaebed;
+                    transform: translateY(-10px);
+                }
+            }
+        }
         img{
-            height: 40vh;
+            height: 30vh;
         }
     }
 

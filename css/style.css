@@ -9,6 +9,34 @@
           backdrop-filter: blur(5px);
 }
 
+#as_app #as_error {
+  z-index: 4;
+}
+
+#as_app #as_btn {
+  -webkit-box-shadow: 0 0 0 2px #38b8d0;
+          box-shadow: 0 0 0 2px #38b8d0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#as_app #as_btn a {
+  color: #38b8d0;
+}
+
+#as_app #as_btn::before {
+  background: #38b8d0;
+}
+
+#as_app #as_btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#as_app #as_btn:hover a {
+  color: #fff;
+}
+
 #as_app section {
   max-height: 100vh;
   overflow-y: scroll;
@@ -325,6 +353,7 @@
   background: #eaebed80;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
 
 #as_app .projects #my_projects .project img {
@@ -335,54 +364,70 @@
   margin-top: 10px;
 }
 
-#as_app .projects #my_projects .project a {
-  position: relative;
-  margin-top: 15px;
-  padding: 5px 15px;
-  -webkit-box-shadow: 0 0 0 2px #000;
-          box-shadow: 0 0 0 2px #000;
-  overflow: hidden;
+#as_app .projects #my_projects .project h4 {
+  margin-bottom: 10px;
+  color: #38b8d0;
+}
+
+#as_app .projects #my_projects .project p {
+  margin: 10px 0;
+  color: #00000090;
+}
+
+#as_app .services {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#as_app .services #as_grid {
+  margin: 10px 0;
+  grid-gap: 20px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#as_app .services #as_grid .card {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #eaebedcb, #ffffff80);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#as_app .projects #my_projects .project a h4 {
-  position: relative;
+#as_app .services #as_grid .card p {
+  margin: 10px 0;
+  color: #00000090;
 }
 
-#as_app .projects #my_projects .project a::before {
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: #38b8d0;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#as_app .projects #my_projects .project a:hover {
-  -webkit-box-shadow: 0 0 0 2px #38b8d0;
-          box-shadow: 0 0 0 2px #38b8d0;
-}
-
-#as_app .projects #my_projects .project a:hover h4 {
-  color: #fff;
-}
-
-#as_app .projects #my_projects .project a:hover::before {
-  -webkit-transform: translate(-50%, -50%) scale(10);
-          transform: translate(-50%, -50%) scale(10);
-  opacity: 1;
+#as_app .services #as_grid .card:hover {
+  -webkit-box-shadow: 0 0 2px 2px #eaebed;
+          box-shadow: 0 0 2px 2px #eaebed;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 #as_app .services img {
-  height: 40vh;
+  height: 30vh;
 }
 
 #as_app .contact {
@@ -563,6 +608,15 @@
         grid-template-areas: "a b b b" "c d d e";
   }
   #as_app .projects #my_projects {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #as_app .services {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #as_app .services #as_grid {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
