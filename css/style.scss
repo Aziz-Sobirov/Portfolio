@@ -173,7 +173,8 @@
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            // justify-content: space-between;
             input{
                 max-width: 50vw;
             }
@@ -193,6 +194,7 @@
                 background: #eaebed80;
                 backdrop-filter: blur(10px);
                 border-radius: 10px;
+                transition: 0.5s;
                 img{
                     width: 100%;
                 }
@@ -207,13 +209,13 @@
                     margin: 10px 0;
                     color: #00000090;
                 }
+
+                &:hover{
+                    transform: translatey(-5px);
+                }
             }
         }
     }
-
-    // .resume,.projects,.home{
-        // display: none;
-    // }
 
     // services
     .services{

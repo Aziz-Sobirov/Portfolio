@@ -55,18 +55,18 @@ let services = [
     }
 ]
 
-for(let i=0;i<services.length;i++){
+for(let s=0;s<services.length;s++){
     document.querySelector(".services #as_grid").innerHTML+=`
 <div class="card">
-    <h2><i class="${services[i].icon}"></i> ${services[i].name}</h2>
-    <p>${services[i].title}</p>
-    <div id="as_btn" onclick="orderService(${i})">
+    <h2><i class="${services[s].icon}"></i> ${services[s].name}</h2>
+    <p>${services[s].title}</p>
+    <div id="as_btn" onclick="orderService()">
         <a href="#">Order</a>
     </div>
 </div>`
 }
 
-function orderService(i){
+function orderService(){
     document.getElementById("as_error404").style.display="flex"
 }
 
@@ -97,3 +97,5 @@ async function sendRequest(){
         "time":"3000"
     });
 }
+
+

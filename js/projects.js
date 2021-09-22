@@ -1,9 +1,15 @@
 
 let projects = [
     {
+        name:'Weather App',
+        title:"Weather App Vue Project",
+        img:"weather-app-vue",
+        href:"https://weather-app-vue2.netlify.app/",
+        info:'HTML, CSS(SCSS), VueJS, API, Adaptive'
+    },{
         name:'Luxury Hotels',
         title:"Luxury Hotels Landing Page",
-        img:"agency",
+        img:"luxury",
         href:"https://luxury-hotels.netlify.app/",
         info:'HTML, CSS(SCSS), for Desktop'
     },{
@@ -68,18 +74,18 @@ for(let i=0;i<projects.length;i++){
     `
 }
 
-function searchProject(filter){
-    console.log("working")
-    let s_project = my_projects.querySelectorAll(".project")
-    for(let i=0;i<s_project.length;i++){
-        let s_name = s_project[i].querySelector("h3")
-        if(s_name){
-            let s_value = s_name.innerHTML;
-            if(s_value.toUpperCase().indexOf(filter) > -1){
-                s_project[i].style.display=""
-            }else{
-                s_project[i].style.display="none"
-            }
-        }
-    }
-}
+// function searchProject(filter){
+//     console.log("working")
+//     let s_project = my_projects.querySelectorAll(".project")
+//     for(let i=0;i<s_project.length;i++){
+//         let s_name = s_project[i].querySelector("h3")
+//         if(s_name){
+//             let s_value = s_name.innerHTML;
+//             if(s_value.toUpperCase().indexOf(filter) > -1){
+//                 s_project[i].style.display=""
+//             }else{
+//                 s_project[i].style.display="none"
+//             }
+//         }
+//     }
+// }
