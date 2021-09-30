@@ -37,10 +37,25 @@
         text-align: center;
         &_text{
             h3{
+                position: relative;
                 font-size: 1.5em;
+                max-height: 40px;
+                overflow: hidden;
             }
             h2{
+                position: relative;
                 font-size: 2em;
+                max-height: 55px;
+                overflow: hidden;
+            }
+            .letter{
+                display: inline-block;
+                line-height: 1em;
+            }
+            .text-wrapper {
+                margin-top: 10px;
+                display: inline-block;
+                overflow: hidden;
             }
         }
         &_img{

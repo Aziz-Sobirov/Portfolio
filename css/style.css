@@ -59,11 +59,28 @@
 }
 
 #as_app .home_text h3 {
+  position: relative;
   font-size: 1.5em;
+  max-height: 40px;
+  overflow: hidden;
 }
 
 #as_app .home_text h2 {
+  position: relative;
   font-size: 2em;
+  max-height: 55px;
+  overflow: hidden;
+}
+
+#as_app .home_text .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#as_app .home_text .text-wrapper {
+  margin-top: 10px;
+  display: inline-block;
+  overflow: hidden;
 }
 
 #as_app .home_img {
@@ -617,6 +634,14 @@
     text-align: left;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  #as_app .home h3 {
+    max-height: 50px;
+    font-size: 2em;
+  }
+  #as_app .home h2 {
+    max-height: 80px;
+    font-size: 3em;
   }
   #as_app .home_img {
     width: 40vw;

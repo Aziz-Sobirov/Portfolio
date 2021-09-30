@@ -8,6 +8,14 @@
             flex-direction: row;
             text-align: left;
             justify-content: space-around;
+            h3{
+                max-height: 50px;
+                font-size: 2em;
+            }
+            h2{
+                max-height: 80px;
+                font-size: 3em;
+            }
             &_img{
                 width: 40vw;
             }

@@ -22,6 +22,62 @@ let as_app_bar = [
     }
 ];
 
+window.addEventListener("load",function(){
+    // Wrap every letter in a span
+var textWrapper1 = document.querySelector('.home-text1 .letters');
+textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper2 = document.querySelector('.home-text2 .letters');
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper3 = document.querySelector('.home-text3 .letters');
+textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.home-text1 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  })
+  .add({
+    targets: '.home-text1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  })
+  //   home-text 2
+  .add({
+    targets: '.home-text2 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  })
+  .add({
+    targets: '.home-text2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  })
+  //   home-text 3
+  .add({
+    targets: '.home-text3 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  })
+  .add({
+    targets: '.home-text3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+})
+
 // resume
 let services = [
     {
