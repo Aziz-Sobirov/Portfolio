@@ -414,11 +414,25 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(45deg, #eaebedcb, #ffffff80);
+  background: #f1f1f180;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+#as_app .services #as_grid .card h1, #as_app .services #as_grid .card h3 {
+  color: #38b8d0;
+}
+
+#as_app .services #as_grid .card h1, #as_app .services #as_grid .card h2 {
+  width: 100%;
+  text-align: center;
+}
+
+#as_app .services #as_grid .card h1 {
+  font-size: 3em;
+  margin: 10px 0;
 }
 
 #as_app .services #as_grid .card p {

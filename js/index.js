@@ -22,47 +22,45 @@ let as_app_bar = [
     }
 ];
 
-let error404_home = "https://sobirov.netlify.app"
-let error404_contact = "https://sobirov.netlify.app/#contact"
-
-
 // resume
 let services = [
     {
-        name:"Web Development",
-        icon:"far fa-user",
-        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+        name:"Designer",
+        icon:"fad fa-pencil-ruler",
+        title:"I value simple content structure, clean design patterns, and thoughtful interactions.",
+        other: 'Things I enjoy designing:',
+        likes:'UX, UI, Web Design and Mobile Design',
+        tools:'Design Tools',
+        lang:'Figma'
     },{
-        name:"Web Development",
-        icon:"far fa-user",
-        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+        name:"Front-end Developer",
+        icon:"fad fa-code",
+        title:"I like to code things and enjoy bringing ideas to life in the browser.",
+        other: 'Languages I know:',
+        likes:'HTML(PUG,JADE), CSS(SCSS,STYLUS), JavaScript(VueJS)',
+        tools:'Dev Tools',
+        lang:'Vs Code, AS library(my own library), Codepen, Sololearn, Git, Github'
     },{
-        name:"Web Development",
-        icon:"far fa-user",
-        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
-    },    {
-        name:"Web Development",
-        icon:"far fa-user",
-        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
-    },{
-        name:"Web Development",
-        icon:"far fa-user",
-        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
-    },{
-        name:"Web Development",
-        icon:"far fa-user",
-        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum!"
+        name:"Back-end Developer",
+        icon:"fad fa-terminal",
+        title:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, omnis.",
+        other: 'Languages I know:',
+        likes:'MongoDB, Express.JS, Node.JS',
+        tools:'Design Tools',
+        lang:'Vs Code, Git, Github, Heroku, Google Console'
     }
 ]
 
 for(let s=0;s<services.length;s++){
     document.querySelector(".services #as_grid").innerHTML+=`
 <div class="card">
-    <h2><i class="${services[s].icon}"></i> ${services[s].name}</h2>
+    <h1 class="${services[s].icon}"></h1>
+    <h2>${services[s].name}</h2>
     <p>${services[s].title}</p>
-    <div id="as_btn" onclick="orderService()">
-        <a href="#">Order</a>
-    </div>
+    <h3>${services[s].other}</h3>
+    <p>${services[s].likes}</p>
+    <h3>${services[s].tools}</h3>
+    <p>${services[s].lang}</p>
 </div>`
 }
 
