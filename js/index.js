@@ -132,7 +132,7 @@ async function sendRequest(){
     let phone = document.getElementById("contact_number").value
     let mes = document.getElementById("contact_message").value
 
-    let res = await fetch("https://api.telegram.org/bot1505568108:AAHUD1iNTmWSXCYVhPjOk3ir9c9ePjheCrU/sendMessage",{
+    let res = await fetch("https://api.telegram.org/bot1505568108:AAGM-EItuWiJuyUGT5oVKRzCJ8-Qk30XSWs/sendMessage",{
         method: "POST",
         headers: {
             "Content-Type":"application/json"

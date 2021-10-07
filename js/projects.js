@@ -1,6 +1,12 @@
 
 let projects = [
     {
+        name:'Bag Shop Landing Page',
+        title:"Product Landing Page",
+        img:"bag-shop",
+        href:"https://bag-shop.netlify.app/",
+        info:'HTML, CSS(SCSS), VueJS, API, Adaptive'
+    },{
         name:'Weather App',
         title:"Weather App Vue Project",
         img:"weather-app-vue",
@@ -10,7 +16,7 @@ let projects = [
         name:'Luxury Hotels',
         title:"Luxury Hotels Landing Page",
         img:"luxury",
-        href:"https://luxury-hotels.netlify.app/",
+        href:"https://hotel-website-design.netlify.app/",
         info:'HTML, CSS(SCSS), for Desktop'
     },{
         name:'Music Player',
