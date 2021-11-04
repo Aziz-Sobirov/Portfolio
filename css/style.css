@@ -13,35 +13,12 @@
   z-index: 4;
 }
 
-#as_app #as_btn {
-  -webkit-box-shadow: 0 0 0 2px #38b8d0;
-          box-shadow: 0 0 0 2px #38b8d0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#as_app #as_btn a {
-  color: #38b8d0;
-}
-
-#as_app #as_btn::before {
-  background: #38b8d0;
-}
-
-#as_app #as_btn:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-#as_app #as_btn:hover a {
-  color: #fff;
-}
-
 #as_app section {
   max-height: 100vh;
   overflow-y: scroll;
   padding: 10px;
   padding-bottom: 60px;
+  scroll-snap-stop: always;
 }
 
 #as_app .home {
@@ -61,6 +38,7 @@
 #as_app .home_text h3 {
   position: relative;
   font-size: 1.5em;
+  font-weight: 500;
   max-height: 40px;
   overflow: hidden;
 }
@@ -68,6 +46,7 @@
 #as_app .home_text h2 {
   position: relative;
   font-size: 2em;
+  font-weight: 500;
   max-height: 55px;
   overflow: hidden;
 }
@@ -98,6 +77,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#as_app .resume h3, #as_app .resume h4 {
+  color: #00000090;
 }
 
 #as_app .resume_about {
@@ -381,6 +364,7 @@
 
 #as_app .projects #my_projects .project h3 {
   margin-top: 10px;
+  color: #000000c7;
 }
 
 #as_app .projects #my_projects .project h4 {
@@ -499,6 +483,7 @@
 }
 
 #as_app .contact form fieldset legend {
+  padding: 0 5px;
   margin-left: 10px;
   font-weight: 700;
   color: #00000080;
@@ -512,6 +497,8 @@
   font-size: 16px;
   font-weight: 500;
   background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #as_app .contact form fieldset input::-webkit-input-placeholder, #as_app .contact form fieldset textarea::-webkit-input-placeholder {
@@ -561,64 +548,14 @@
   margin-top: 10px;
 }
 
-#as_app .contact form button {
-  position: relative;
-  margin-top: 20px;
-  height: 35px;
-  width: 120px;
+#as_app .contact form .as_btn {
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
-  font-size: 1em;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: transparent;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 0 2px #00000090;
-          box-shadow: 0 0 0 2px #00000090;
-  overflow: hidden;
-}
-
-#as_app .contact form button h4 {
-  position: relative;
-}
-
-#as_app .contact form button::before {
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: #38b8d0;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#as_app .contact form button:hover {
-  -webkit-box-shadow: 0 0 0 2px #38b8d0;
-          box-shadow: 0 0 0 2px #38b8d0;
-}
-
-#as_app .contact form button:hover h4 {
-  color: #fff;
-}
-
-#as_app .contact form button:hover::before {
-  -webkit-transform: translate(-50%, -50%) scale(10);
-          transform: translate(-50%, -50%) scale(10);
-  opacity: 1;
+  max-width: 150px;
+  margin-top: 10px;
 }
 
 @media (min-width: 759px) {
@@ -656,6 +593,9 @@
   #as_app .projects #my_projects {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  #as_app .projects_footer-img {
+    max-width: 35vw;
   }
   #as_app .services {
     -webkit-box-pack: center;

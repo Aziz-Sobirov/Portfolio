@@ -1,12 +1,35 @@
-// Aziz Sobirov
 
 let projects = [
     {
+        name:'uWikipedia App',
+        title:"Wikipedia search",
+        img:"uwikipedia",
+        href:"https://uwikipedia-app.netlify.app/",
+        info:'HTML, CSS(SCSS), AS(library), JS, API, Adaptive'
+    },{
+        name:'uTask App',
+        title:"Task App",
+        img:"task-app",
+        href:"https://utask-app.netlify.app/",
+        info:'HTML, CSS(SCSS), AS(library), JS, Adaptive'
+    },{
+        name:'Flower Shop Landing Page',
+        title:"Flower Shop Landing Page",
+        img:"flower-shop",
+        href:"https://flower-shop-landing-page.netlify.app/",
+        info:'HTML, CSS(SCSS), for Desktop'
+    },{
+        name:' TripGoal Landing Page',
+        title:" TripGoal Landing Page for travels",
+        img:"trip-goal",
+        href:"https://trip-goal.netlify.app/",
+        info:'HTML, CSS(SCSS), for Desktop'
+    },{
         name:'Bag Shop Landing Page',
         title:"Product Landing Page",
         img:"bag-shop",
         href:"https://bag-shop.netlify.app/",
-        info:'HTML, CSS(SCSS), VueJS, API, Adaptive'
+        info:'HTML, CSS(SCSS), Adaptive'
     },{
         name:'Weather App',
         title:"Weather App Vue Project",

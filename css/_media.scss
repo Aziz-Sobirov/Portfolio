@@ -32,6 +32,9 @@
         .projects #my_projects{
             grid-template-columns: 1fr 1fr 1fr;
         }
+        .projects_footer-img{
+            max-width: 35vw;
+        }
 
         .services{
             justify-content: center;
